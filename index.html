@@ -7,7 +7,8 @@
     <title>Change Your String</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body></body>>
+    <!--Fontes-->
     <div class="conteúdo">
         <div class="cabeçalho">
             <h1>Coloque seu texto abaixo</h1>
@@ -26,5 +27,37 @@
         </div><!--tipostxt-->
     </div><!--conteúdo-->
     <script src="index.js"></script>
+    <!--temperatura-->
+    <div class="principal">
+        <h1>Conversor de Temperatura</h1>
+        <input type="text" class="text">
+        <input type="submit" name="" id="btn"> 
+        <h2 class="k-resposta">Escreva um valor em Celsius</h2>
+        <h2 class="f-resposta"></h2>
+    </div>
+    <!--moedas-->
+    <!-- 1. o usuário envia um valor 
+        2. o usuário seleciona um moeda
+        3. o valor digitado é dividido pelo valor da moeda escolhida
+        4. o resultado é mostrado na tela-->
+        <div class="cabeçalho">
+            <h1>Conversor de moedas</h1>
+        </div><!--cabeçalho-->
+        <div class="corpo">
+            <input type="radio" name="radmoney" id="dólar">
+            <label for="dólar">Dólar</label>
+            <input type="radio" name="radmoney" id="libra">
+            <label for="libra">Libra</label>
+            <input type="radio" name="radmoney" id="euro">
+            <label for="euro">Euro</label>
+            <input type="number" min="0" id="txt" >
+            <p id="resposta">
+                Insira um valor em real e selecione a moeda desejada
+            </p>
+            <input type="button" name="" id="btn" value="Converter" onclick="converter()">
+        </div><!--corpo-->
+        <div class="rodapé">
+    
+        </div><!--rodapé-->
 </body>
 </html>
