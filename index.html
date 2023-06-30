@@ -7,15 +7,16 @@
     <title>Change Your String</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body></body>>
-    <!--Fontes-->
+<body></body>
     <div class="conteúdo">
-        <div class="cabeçalho">
-            <h1>Coloque seu texto abaixo</h1>
+    <!--Fontes-->
+    <div class="principal">
+        <div class="entrada">
+            <h1>Insira seu texto abaixo</h1>
             <input type="text" class="txt">
             <input type="submit" class="btn">
-        </div><!--principal-->
-        <div class="corpo">
+        </div><!--entrada-->
+        <div class="saída">
             <div id="maiúsculo">
                 <h2>Maiúsculo</h2>
                 <h3 id="res-maiúsculo"></h3>
@@ -24,40 +25,45 @@
                 <h2>Minúsculo</h2>
                 <h3 id="res-minúsculo"></h3>
             </div><!--Minúsculo-->
-        </div><!--tipostxt-->
-    </div><!--conteúdo-->
-    <script src="index.js"></script>
+        </div><!--saída-->
+    </div><!--principal-->
     <!--temperatura-->
     <div class="principal">
-        <h1>Conversor de Temperatura</h1>
-        <input type="text" class="text">
-        <input type="submit" name="" id="btn"> 
-        <h2 class="k-resposta">Escreva um valor em Celsius</h2>
-        <h2 class="f-resposta"></h2>
-    </div>
+        <div class="entrada">
+            <h1>Conversor de Temperatura</h1>
+            <input type="text" class="text">
+            <input type="submit" name="" id="btn"> 
+        </div><!--entrada-->
+        <div class="saída">
+            <h2>Escreva um valor em Celsius</h2>
+            <h3 id="k-resposta"></h3>
+            <h3 id="f-resposta"></h3>
+        </div><!--saída-->
+    </div><!--principal-->
     <!--moedas-->
-    <!-- 1. o usuário envia um valor 
-        2. o usuário seleciona um moeda
-        3. o valor digitado é dividido pelo valor da moeda escolhida
-        4. o resultado é mostrado na tela-->
-        <div class="cabeçalho">
-            <h1>Conversor de moedas</h1>
-        </div><!--cabeçalho-->
-        <div class="corpo">
-            <input type="radio" name="radmoney" id="dólar">
-            <label for="dólar">Dólar</label>
-            <input type="radio" name="radmoney" id="libra">
-            <label for="libra">Libra</label>
-            <input type="radio" name="radmoney" id="euro">
-            <label for="euro">Euro</label>
-            <input type="number" min="0" id="txt" >
-            <p id="resposta">
-                Insira um valor em real e selecione a moeda desejada
-            </p>
-            <input type="button" name="" id="btn" value="Converter" onclick="converter()">
-        </div><!--corpo-->
-        <div class="rodapé">
-    
-        </div><!--rodapé-->
+        <!-- 1. o usuário envia um valor 
+            2. o usuário seleciona um moeda
+            3. o valor digitado é dividido pelo valor da moeda escolhida
+            4. o resultado é mostrado na tela-->
+        <div class="principal">
+            <div class="entrada">
+                <h1>Conversor de moedas</h1>
+                <input type="radio" name="radmoney" id="dólar">
+                <label for="dólar">Dólar</label>
+                <input type="radio" name="radmoney" id="libra">
+                <label for="libra">Libra</label>
+                <input type="radio" name="radmoney" id="euro">
+                <label for="euro">Euro</label>
+                <input type="number" min="0" id="txt" >
+                <input type="button" name="" id="btn" value="Converter" onclick="converter()">
+            </div><!--entrada-->
+            <div class="saída">
+                <h3 id="resposta">
+                    Insira um valor em real e selecione a moeda desejada
+                </h3>
+            </div><!--saída-->
+        </div><!--principal-->
+    </div><!--conteúdo-->
+    <script src="index.js"></script>
 </body>
 </html>
