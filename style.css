@@ -1,0 +1,27 @@
+/*Paleta de Cores
+    3AA6B9
+    FFD0D0
+    FF9EAA
+    C1ECE4
+*/
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #3AA6B9;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 2rem;
+    
+}
+.conteúdo{
+    background-color:rgb(216, 225, 233);
+    padding: 2rem;
+    border-radius: 5px;
+}
