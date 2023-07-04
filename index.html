@@ -13,31 +13,25 @@
     <div class="principal">
         <div class="entrada">
             <h1>Conversor de Fontes</h1>
-            <input type="text" class="txt">
-            <input type="submit" class="btn">
+            <input type="text" class="txt" id="txtFontes">
+            <input type="submit" class="btn" id="btnFontes">
         </div><!--entrada-->
-        <div class="saída">
-            <div id="maiúsculo">
-                <h2>Maiúsculo</h2>
-                <h3 id="res-maiúsculo"></h3>
-            </div><!--maiúsculo-->
-            <div id="minúsculo">
-                <h2>Minúsculo</h2>
-                <h3 id="res-minúsculo"></h3>
-            </div><!--Minúsculo-->
+        <div class="saída">          
+            <h3 id="resMaiúsculo"></h3> 
+            <h3 id="resMinúsculo"></h3>
         </div><!--saída-->
     </div><!--principal-->
     <!--temperatura-->
     <div class="principal">
         <div class="entrada">
             <h1>Conversor de Temperatura</h1>
-            <input type="text" class="text">
-            <input type="submit" name="" id="btn"> 
+            <input type="text" class="txt" id="txtTemperatura">
+            <input type="submit" name="" class="btn" id="btnTemperatura"> 
         </div><!--entrada-->
         <div class="saída">
             <h2>Escreva um valor em Celsius</h2>
-            <h3 id="k-resposta"></h3>
-            <h3 id="f-resposta"></h3>
+            <h3 id="resKelvin"></h3>
+            <h3 id="resFaren"></h3>
         </div><!--saída-->
     </div><!--principal-->
     <!--moedas-->
@@ -54,8 +48,8 @@
                 <label for="libra">Libra</label>
                 <input type="radio" name="radmoney" id="euro">
                 <label for="euro">Euro</label>
-                <input type="number" min="0" id="txt" >
-                <input type="button" name="" id="btn" value="Converter" onclick="converter()">
+                <input type="number" min="0" class="txt" id="txtMoedas" >
+                <input type="button" name="" class="btn" id="btnMoedas" value="Converter" onclick="converter()">
             </div><!--entrada-->
             <div class="saída">
                 <h3 id="resposta">
