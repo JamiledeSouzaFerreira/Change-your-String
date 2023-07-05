@@ -1,5 +1,5 @@
 //fontes
-var txtF = document.querySelector('input#txtFontes')
+var txtFontes = document.querySelector('input#txtFontes')
 var btnFontes = document.querySelector('input#btnFontes')
 btnFontes.addEventListener("click", maiúsculo)
 btnFontes.addEventListener("click", minúsculo)
@@ -14,10 +14,21 @@ function minúsculo (){
     res.innerHTML = txt.toLowerCase()
 }
 //temperatura
-var btnTemperatura = document.querySelector('imput#btnTemperatura')
+var txtTemperatura = document.querySelector('input#txtTemperatura')
+var btnTemperatura = document.querySelector('input#btnTemperatura')
 btnTemperatura.addEventListener("click", kelvin)
 btnTemperatura.addEventListener("click", faren)
 function kelvin (){
-
+    let res = document.querySelector('h3#resKelvin')
+    let txt = Number.parseFloat(txtTemperatura.value)
+    var kelvin = txt + 273
+    res.innerHTML = (kelvin + ' Kelvin')
+}
+function faren(){
+    
+    let txt = Number.parseFloat(txtTemperatura.value)
+    var faren = txt + 5
+    let res = document.querySelector('h3#resFaren')
+    res.innerHTML = (fahrenheit + 'faren')
 }
 //moedas
