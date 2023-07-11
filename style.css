@@ -22,7 +22,9 @@ body{
     background-color:rgb(216, 225, 233);
     padding: 2rem;
     border-radius: 5px;
-    margin: 1%;
+    margin: auto;
+    max-width: 900px;
+   /* min-width: 380px;*/
 }
 .principal{
     padding: 2rem;
