@@ -25,9 +25,9 @@ function kelvin (){
     res.innerHTML = (kelvin + ' Kelvin')
 }
 function faren(){
-    
+    //document.body.style.backgroundColor = "red"
     let txt = Number.parseFloat(txtTemperatura.value)
-    var faren = txt + 5
+    
     let res = document.querySelector('h3#resFaren')
     res.innerHTML = (fahrenheit + 'faren')
 }
