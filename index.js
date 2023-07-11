@@ -26,9 +26,9 @@ function kelvin (){
 }
 function faren(){
     //document.body.style.backgroundColor = "red"
-    let txt = Number.parseFloat(txtTemperatura.value)
-    
     let res = document.querySelector('h3#resFaren')
-    res.innerHTML = (fahrenheit + 'faren')
+    let txt = Number.parseFloat(txtTemperatura.value)
+    var faren = [9*txt + (5*32)]/5
+    res.innerHTML = (faren + ' Fahrenheit')
 }
 //moedas
