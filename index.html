@@ -34,24 +34,24 @@
         </div><!--saída-->
     </div><!--principal-->
     <!--moedas-->
-        <!-- 1. o usuário envia um valor 
+        <!-- 1. o usuário envia um valor em real
             2. o usuário seleciona um moeda
             3. o valor digitado é dividido pelo valor da moeda escolhida
             4. o resultado é mostrado na tela-->
         <div class="principal">
             <div class="entrada">
                 <h1>Conversor de moedas</h1>
-                <input type="radio" name="radmoney" id="dólar">
+                <input type="radio" name="radmoney" class="rad" id="dólar">
                 <label for="dólar">Dólar</label>
-                <input type="radio" name="radmoney" id="libra">
+                <input type="radio" name="radmoney" class="rad" id="libra">
                 <label for="libra">Libra</label>
-                <input type="radio" name="radmoney" id="euro">
+                <input type="radio" name="radmoney" class="rad" id="euro">
                 <label for="euro">Euro</label>
                 <input type="number" min="0" class="txt" id="txtMoedas" >
-                <input type="button" name="" class="btn" id="btnMoedas" value="Converter" onclick="converter()">
+                <input type="button" name="" class="btn" id="btnMoedas" value="Enviar">
             </div><!--entrada-->
             <div class="saída">
-                <h3 id="resposta">
+                <h3 id="resMoeda">
                     Insira um valor em real e selecione a moeda desejada
                 </h3>
             </div><!--saída-->
