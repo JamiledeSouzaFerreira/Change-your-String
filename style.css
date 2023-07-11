@@ -29,3 +29,22 @@ body{
 .principal{
     padding: 2rem;
 }
+.cabeçalho{
+    
+}
+.barraNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(141, 146, 147);
+    height: 8vh;
+}
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
