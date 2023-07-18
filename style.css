@@ -15,15 +15,16 @@
 body{
     background-color: #3AA6B9;
     align-items: center;
+    min-width: 320px;
     
 }
 .conteúdo{
     background-color:rgb(216, 225, 233);
     padding: 2rem;
-    border-radius: 5px;
     margin: auto;
-    max-width: 900px;
-    min-width: 380px;
+    min-width: 320px;
+    max-width: 750px;
+    height: 92vh;
 }
 .principal{
     padding: 2rem;
@@ -44,7 +45,6 @@ ul{
     display: flex;
     color: rgb(216, 225, 233);
     cursor: pointer;
-    
 }
 #logo{
     color: rgb(216, 225, 233);
@@ -53,4 +53,18 @@ ul{
 li{
     letter-spacing: 3px;
     margin-left: 32px;
+}
+.menuResponsivo div{
+    
+    width: 32px;
+    height: 2px;
+    background-color: rgb(216, 225, 233);
+    margin: 8px;
+}
+.menuResponsivo {
+    cursor: pointer;
+    display: none;
+}
+@media (max-widht: 999px) {
+    
 }
