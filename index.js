@@ -1,3 +1,4 @@
+//nav bar responsiva
 //fontes
 var txtFontes = document.querySelector('input#txtFontes')
 var btnFontes = document.querySelector('input#btnFontes')
