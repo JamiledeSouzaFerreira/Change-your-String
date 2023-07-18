@@ -15,7 +15,6 @@
 body{
     background-color: #3AA6B9;
     align-items: center;
-    padding: 2rem;
     
 }
 .conteúdo{
@@ -24,7 +23,7 @@ body{
     border-radius: 5px;
     margin: auto;
     max-width: 900px;
-   /* min-width: 380px;*/
+    min-width: 380px;
 }
 .principal{
     padding: 2rem;
@@ -36,13 +35,20 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgb(141, 146, 147);
+    background: rgb(7, 65, 103);
     height: 8vh;
+    
 }
 ul{
     list-style: none;
     display: flex;
+    color: rgb(216, 225, 233);
+    cursor: pointer;
     
+}
+#logo{
+    color: rgb(216, 225, 233);
+    cursor: pointer;
 }
 li{
     letter-spacing: 3px;
