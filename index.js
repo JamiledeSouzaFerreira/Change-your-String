@@ -51,3 +51,48 @@ function câmbio(){
         res.innerHTML = euro
     }
 }
+/*nav bar responsiva*/
+class MobileNavbar {
+    constructor(menuResponsivo, listaNav, navLinks) {
+      this.menuResponsivo = document.querySelector(menuResponsivo);
+      this.listaNav = document.querySelector(listaNav);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.listaNav.classList.toggle(this.activeClass);
+      this.menuResponsivo.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.menuResponsivo.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.menuResponsivo) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".menuResponsivo",
+    ".listaNav",
+    ".listaNav li",
+  );
+  mobileNavbar.init();
