@@ -127,3 +127,52 @@ a {
   .menuResponsivo.active .linha3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+  /*toogles*/
+  
+  #checkFontes{
+    display: none;
+  }
+  .switch{
+    position: relative;
+    display: flex;
+    background-color: #767c82;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+  .slider{
+    display: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+  }
+  #checkFontes:checked ~ .switch{
+    background-color: #3AA6B9; 
+  }
+  #checkFontes:checked ~ .switch .slider{
+    transform: translateX(23px);
+  }
+  #checkTemp{
+    display: none;
+  }
+  #checkTemp:checked ~ .switch{
+    background-color: #3AA6B9; 
+  }
+  #checkTemp:checked ~ .switch .slider{
+    transform: translateX(23px);
+  }
+  #checkMoedas{
+    display: none;
+  }
+  #checkMoedas:checked ~ .switch{
+    background-color: #3AA6B9; 
+  }
+  #checkMoedas:checked ~ .switch .slider{
+    transform: translateX(23px);
+  }
