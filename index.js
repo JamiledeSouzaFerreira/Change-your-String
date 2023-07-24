@@ -16,14 +16,11 @@ function toogleF (){
     }
 }
 function toogleT (){
-    let txt = document.querySelector('#txtTemperatura')
     let dados = document.querySelector('.dadosUsuárioT')
     let res = document.querySelector('.saídaT')
     if(togTemp.checked){
-      txt.style.display = "inline-block"
       dados.style.display = "inline-block"
     } else { 
-      txt.style.display = "none"
       dados.style.display = "none"
       res.style.display = "none"
     }

@@ -158,7 +158,7 @@ a {
     border-radius: 50%;
     transition: all .5s ease-in-out;
   }
-  .dadosUsuárioF, .dadosUsuárioT{
+  .dadosUsuárioF, .dadosUsuárioT, .dadosUsuárioM{
     display: none;
   }
   #checkFontes:checked ~ .switch{
