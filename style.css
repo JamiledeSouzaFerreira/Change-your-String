@@ -19,6 +19,9 @@ body{
     background-color: #3AA6B9;
     align-items: center;
 }
+h1{
+  display: inline-block;
+}
 .conteúdo{
     background-color:rgb(216, 225, 233);
     padding: 2rem;
@@ -49,6 +52,7 @@ a {
     align-items: center;
     background: #022956;
     height: 10vh;
+    
   }
 
   .listaNav {
@@ -128,7 +132,9 @@ a {
     transform: rotate(45deg) translate(-5px, -7px);
   }
   /*toogles*/
-  
+.toogle{
+  display: inline-block;
+}
   #checkFontes{
     display: none;
   }
@@ -152,12 +158,14 @@ a {
     border-radius: 50%;
     transition: all .5s ease-in-out;
   }
+  #txtFontes, #btnFontes{
+    display: none;
+  }
   #checkFontes:checked ~ .switch{
     background-color: #3AA6B9; 
-  }
-  #checkFontes:checked ~ .switch .slider{
-    transform: translateX(23px);
-  }
+    .slider{
+      transform: translateX(23px); }
+    }
   #checkTemp{
     display: none;
   }

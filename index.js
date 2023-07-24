@@ -1,4 +1,29 @@
-//nav bar responsiva
+//toogle
+var togFontes = document.querySelector('#checkFontes')
+var togTemp = document.querySelector('#checkTemp')
+var togMoedas = document.querySelector('#checkMoedas')
+togFontes.addEventListener("click", toogleF)
+togTemp.addEventListener("click", toogleT)
+togMoedas.addEventListener("click", toogleM)
+function toogleF (){
+    let txt = document.querySelector('#txtFontes')
+    let btn = document.querySelector('#btnFontes')
+    let res = document.querySelector('.saída')
+    if(togFontes.checked){
+      txt.style.display = "inline-block"
+      btn.style.display = "inline-block"
+    } else { 
+      txt.style.display = "none"
+      btn.style.display = "none"
+      res.style.display = "none"
+    }
+}
+function toogleT (){
+  document.body.style.backgroundColor = 'red'
+}
+function toogleM (){
+  document.body.style.backgroundColor = 'red'
+}
 //fontes
 var txtFontes = document.querySelector('input#txtFontes')
 var btnFontes = document.querySelector('input#btnFontes')
@@ -8,6 +33,7 @@ function maiúsculo (){
     let res = document.querySelector('h3#resMaiúsculo')
     let txt = String(txtFontes.value)
     res.innerHTML = txt.toUpperCase()
+    
 }
 function minúsculo (){
     let res = document.querySelector('h3#resMinúsculo')
