@@ -26,7 +26,15 @@ function toogleT (){
     }
 }
 function toogleM (){
-  document.body.style.backgroundColor = 'red'
+  //document.body.style.backgroundColor = 'red'
+    let dados = document.querySelector('.dadosUsuárioM')
+    let res = document.querySelector('.saídaM')
+    if(togMoedas.checked){
+      dados.style.display = "inline-block"
+    } else { 
+      dados.style.display = "none"
+      res.style.display = "none"
+    }
 }
 //fontes
 var txtFontes = document.querySelector('input#txtFontes')
