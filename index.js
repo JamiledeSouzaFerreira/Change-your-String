@@ -6,20 +6,27 @@ togFontes.addEventListener("click", toogleF)
 togTemp.addEventListener("click", toogleT)
 togMoedas.addEventListener("click", toogleM)
 function toogleF (){
-    let txt = document.querySelector('#txtFontes')
-    let btn = document.querySelector('#btnFontes')
-    let res = document.querySelector('.saída')
+    let dados = document.querySelector('.dadosUsuárioF')
+    let res = document.querySelector('.saídaF')
     if(togFontes.checked){
-      txt.style.display = "inline-block"
-      btn.style.display = "inline-block"
+      dados.style.display = "block"
     } else { 
-      txt.style.display = "none"
-      btn.style.display = "none"
+      dados.style.display = "none"
       res.style.display = "none"
     }
 }
 function toogleT (){
-  document.body.style.backgroundColor = 'red'
+    let txt = document.querySelector('#txtTemperatura')
+    let dados = document.querySelector('.dadosUsuárioT')
+    let res = document.querySelector('.saídaT')
+    if(togTemp.checked){
+      txt.style.display = "inline-block"
+      dados.style.display = "inline-block"
+    } else { 
+      txt.style.display = "none"
+      dados.style.display = "none"
+      res.style.display = "none"
+    }
 }
 function toogleM (){
   document.body.style.backgroundColor = 'red'
