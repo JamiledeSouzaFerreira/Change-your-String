@@ -41,6 +41,7 @@ var txtFontes = document.querySelector('input#txtFontes')
 var btnFontes = document.querySelector('input#btnFontes')
 btnFontes.addEventListener("click", maiúsculo)
 btnFontes.addEventListener("click", minúsculo)
+btnFontes.addEventListener("click", fonte)
 function maiúsculo (){
     let res = document.querySelector('h3#resMaiúsculo')
     let txt = String(txtFontes.value)
@@ -51,6 +52,11 @@ function minúsculo (){
     let res = document.querySelector('h3#resMinúsculo')
     let txt = String(txtFontes.value)
     res.innerHTML = txt.toLowerCase()
+}
+function fonte (){
+  let res = document.querySelector('h3#resMinúsculo')
+  let txt = String(txtFontes.value)
+  res.innerHTML = txt.toLowerCase()
 }
 //temperatura - adicionar uma mensagem pro caso de nenhum valor ter sido inserido
 var txtTemperatura = document.querySelector('input#txtTemperatura')

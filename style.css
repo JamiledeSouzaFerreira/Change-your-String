@@ -3,15 +3,20 @@
     FFD0D0
     FF9EAA
     C1ECE4
-*/
+/*Fontes*/
+@font-face {
+  font-family: [Angelface];
+  src: url(Change-your-String/Angelface.otf);
+}
 /*Conteúdo*/
 *{
     margin: 0;
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+*/ font-family: Angelface;
+  }
 html{
     scroll-behavior: smooth;
 }
