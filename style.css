@@ -5,17 +5,24 @@
     C1ECE4
 /*Fontes*/
 @font-face {
-  font-family: [Angelface];
-  src: url(Change-your-String/Angelface.otf);
+  font-family: 'bart';
+  src: url('Fontes Gratuitas/Bartleen.otf') format(opentype);
+}
+@font-face {
+  font-family: 'borel';
+  src: url('Fontes Gratuitas/Borel/Borel.ttf') format(truetype);
+}
+h3#resBart{
+  font-family: bart;
 }
 /*Conteúdo*/
+
 *{
     margin: 0;
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-*/ font-family: Angelface;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 html{
     scroll-behavior: smooth;
